@@ -16,13 +16,18 @@ if not is_admin:
 
 def say_six_seven():
     while True:
-        sleep(10)
+        sleep(67)
         pygame.mixer.init() # Inicia o mixer do pygame
         pygame.mixer.music.load("audio.mp3") # Carrega o áudio
         pygame.mixer.music.play() # Toca o áudio
-        os.startfile("text.txt") # Mostra o bloco de notas
-        os.startfile("image1.jpeg") # Mostra imagem
-        os.startfile("image2.png") # 
-        os.startfile("image3.png") #
+        for i in range(0,6):
+            os.startfile("text.txt") # Mostra o bloco de notas
+            sleep(0.5)
+            os.startfile("image1.jpeg") # Mostra imagem
+            sleep(0.5)
+            os.startfile("image2.png") # 
+            sleep(0.5)
+            os.startfile("image3.png") #
+            sleep(0.5)
 
 say_six_seven()
